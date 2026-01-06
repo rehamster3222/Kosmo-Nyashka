@@ -229,14 +229,15 @@ def galaxies():
 	global stg, nst,nsttt,sto,bhn,bhnn,bhnnn
 	global bhx, bhy,bhz,bhsh,bhm,bhr,bhssx
 	global bhssy,bhssz
-	os	os.makedirs("galaxies", exist_ok=True)s.chdir("galaxies")
+	os.makedirs("galaxies", exist_ok=True)
+	os.chdir("galaxies")
 	glxx = random.choice(["NGC", "MGC", "JGC"])
 	gllx = random.randint(1000, 9999)
 	galx = (f"{glxx}{gllx}")
 	with open(
 	f"galaxy-{galx}.txt", "a"
 	) as ksm:
-		sct = random.randint(7000, 23000)
+		sct = random.randint(70000, 100000)
 		shnc = random.uniform(0, 1)
 		bhc = random.uniform(0, 1)
 		for ct in range (sct):
