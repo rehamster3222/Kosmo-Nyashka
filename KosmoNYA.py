@@ -229,8 +229,7 @@ def galaxies():
 	global stg, nst,nsttt,sto,bhn,bhnn,bhnnn
 	global bhx, bhy,bhz,bhsh,bhm,bhr,bhssx
 	global bhssy,bhssz
-	os.mkdir("galaxies")
-	os.chdir("galaxies")
+	os	os.makedirs("galaxies", exist_ok=True)s.chdir("galaxies")
 	glxx = random.choice(["NGC", "MGC", "JGC"])
 	gllx = random.randint(1000, 9999)
 	galx = (f"{glxx}{gllx}")
